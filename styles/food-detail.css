@@ -1,0 +1,98 @@
+.food-detail-container {
+  overflow-y: auto;
+}
+.food-detail-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(275deg, white 50%, #f9c132 50%);
+  z-index: -1;
+}
+.food-detail-food-info {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.food-detail-food-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.food-detail-chef-name {
+  font-weight: 300;
+}
+.food-detail-restaurant-name {
+  font-weight: 400;
+  text-decoration: underline;
+}
+.food-detail-star-level {
+  color: gold;
+}
+
+.food-detail-tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.food-detail-tag {
+  background-color: gold;
+  padding: 0 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.food-detail-brief-intro {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.food-detail-price {
+  font-weight: 900;
+}
+
+.food-detail-review-card {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.food-detail-review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.food-detail-food-info {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.food-detail-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media (max-width: 768px) {
+  .food-detail-food-info {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}

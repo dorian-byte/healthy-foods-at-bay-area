@@ -1,0 +1,390 @@
+/* use web font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+blockquote,
+dl,
+dd,
+figure,
+figcaption,
+form,
+fieldset,
+legend {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'],
+label[for] {
+  cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  padding: 0 !important;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.side-bar {
+  width: 5vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    135deg,
+    #f9c132,
+    #f9c132 35px,
+    white 15px,
+    white 70px
+  );
+}
+
+.content {
+  width: 90vw;
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 5vw;
+  height: 100vh;
+  align-items: center;
+  background-color: #f9c132;
+}
+
+.nav-link {
+  margin-top: 5vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.navigation a:first-child {
+  margin-top: 5vh;
+}
+
+.reviews-section {
+  padding: 0 20px;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.left-panel {
+  width: 45vw;
+  max-height: 100vh;
+  background-color: #f9c132;
+  padding: 5vw;
+  padding-top: 10px;
+}
+
+.logo {
+  width: 3rem;
+}
+.nav-logo {
+  display: none;
+}
+
+.search-box {
+  height: 4rem;
+  box-shadow: 3px 10px 40px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+#search-input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+  color: black;
+}
+
+#search-button {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.cards-container {
+  margin-top: 1rem;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.about-me-container {
+  margin-top: 1rem;
+  overflow-y: auto;
+}
+
+.about-me-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cards-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.right-panel {
+  width: 45vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.item-card {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.item-image {
+  width: 15vw;
+  height: 10vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-content {
+  width: 50%;
+  color: #333;
+}
+
+.curr-link {
+  color: white;
+  font-weight: bold;
+}
+
+.my-name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* responsiveness: 2 breakpoints */
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .side-bar,
+  .right-panel {
+    display: none;
+  }
+
+  .left-panel {
+    width: 100vw;
+    background-color: transparent;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    min-height: 56px !important;
+    height: 56px;
+    order: -1;
+    border-bottom: 2px solid white;
+    background-color: #333;
+  }
+
+  .nav-link {
+    writing-mode: horizontal-tb;
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: #ddd;
+  }
+  .navigation a:first-child {
+    margin-top: 0;
+  }
+
+  .content {
+    flex-direction: column; /* Stack children vertically */
+    width: 100vw;
+    /* height: 90vh; */
+  }
+
+  .search-box {
+    margin: 0;
+    margin-top: 1rem;
+    /* width: 55vw; */
+  }
+  .cards-container {
+    max-height: 50vh;
+    width: 100vw;
+  }
+  .logo {
+    display: none;
+  }
+  .left-panel {
+    width: 90vw;
+  }
+  .left-panel::-webkit-scrollbar {
+    width: 0px; /* Adjust the width of the scrollbar */
+  }
+  .content::-webkit-scrollbar {
+    width: 0px; /* Adjust the width of the scrollbar */
+  }
+  .nav-logo {
+    display: block;
+    width: 2rem;
+  }
+  .about-me-container {
+    padding: 2rem;
+  }
+  .app-title {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .item-card {
+    width: 100%;
+  }
+  .item-image {
+    width: 30vw;
+    height: 20vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .app-title {
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

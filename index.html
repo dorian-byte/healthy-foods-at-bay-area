@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food @bay area</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./javascript/home.js"></script>
+  </head>
+  <body class="root-container">
+    <main class="main">
+      <div class="side-bar"></div>
+      <div class="content">
+        <div class="left-panel">
+          <a href="./index.html" class="nav-link curr-link">
+            <img
+              src="./images/logo.png"
+              alt="Healthy Food @bay area logo"
+              srcset="
+                ./images/logo.png    1x,
+                ./images/logo@2x.png 2x,
+                ./images/logo@3x.png 3x
+              "
+              class="logo"
+            />
+          </a>
+          <h1 class="app-title">Healthy Food</h1>
+          <h3>@BAY AREA</h3>
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search your favorites..."
+            />
+            <img
+              src="./images/search-button.png"
+              alt="search"
+              id="search-button"
+            />
+          </div>
+          <div id="card-container" class="cards-container"></div>
+        </div>
+        <div
+          class="right-panel"
+          style="background-image: url(./images/right-panel-bg.png)"
+        ></div>
+      </div>
+      <div class="navigation">
+        <a href="./index.html" class="nav-link curr-link">
+          <img
+            class="nav-logo"
+            src="./images/logo.png"
+            srcset="
+              ./images/logo.png    1x,
+              ./images/logo@2x.png 2x,
+              ./images/logo@3x.png 3x
+            "
+            alt="home"
+            class="nav-icon"
+          />
+        </a>
+        <a href="./index.html" class="nav-link curr-link">HOME</a>
+        <a href="./foods.html" class="nav-link">FOODS</a>
+        <a href="./drinks.html" class="nav-link">DRINKS</a>
+        <a href="./about-me.html" class="nav-link">ABOUT ME</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food @bay area</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/food-detail.css" />
+    <script src="./javascript/food_detail.js"></script>
+  </head>
+  <body class="root-container">
+    <main class="main">
+      <div class="side-bar"></div>
+      <div class="content">
+        <div class="food-detail-container">
+          <div class="food-detail-food-info">
+            <div class="food-detail-image-section">
+              <div class="food-detail-image-box">
+                <img
+                  src="./images/acai-bowl.png"
+                  alt="Food Image"
+                  class="food-detail-image"
+                  style="width: 300px"
+                  id="food-image"
+                />
+              </div>
+            </div>
+            <div class="food-detail-info-section">
+              <div class="food-detail-food-name" id="food-title"></div>
+              <div class="food-detail-chef-name" id="chef-name"></div>
+              <div
+                class="food-detail-restaurant-name"
+                id="restaurant-name"
+              ></div>
+              <div class="food-detail-star-level" id="star-level"></div>
+              <p class="food-detail-brief-intro" id="food-description"></p>
+              <div class="food-detail-tags" id="tag-list"></div>
+              <div class="food-detail-price" id="estimated-price"></div>
+            </div>
+          </div>
+
+          <div class="food-detail-reviews-section"></div>
+        </div>
+      </div>
+      <div class="navigation">
+        <a href="./index.html" class="nav-link curr-link">
+          <img
+            class="nav-logo"
+            src="./images/logo.png"
+            srcset="
+              ./images/logo.png    1x,
+              ./images/logo@2x.png 2x,
+              ./images/logo@3x.png 3x
+            "
+            alt="home"
+            class="nav-icon"
+          />
+        </a>
+        <a href="./index.html" class="nav-link">HOME</a>
+        <a href="./foods.html" class="nav-link" id="foods-link">FOODS</a>
+        <a href="./drinks.html" class="nav-link" id="drinks-link">DRINKS</a>
+        <a href="./about-me.html" class="nav-link">ABOUT ME</a>
+      </div>
+    </main>
+  </body>
+</html>
